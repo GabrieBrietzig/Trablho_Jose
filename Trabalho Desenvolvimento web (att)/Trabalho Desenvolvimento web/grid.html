@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade de Shows</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        
+        .h1show {
+            text-align: center;
+            color: #222;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            color: black;
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .grid-item {
+            font-size: 18px;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .grid-header {
+            background-color: #222;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1show">Grade de Shows</h1>
+    <div id="grid">
+        <div class="grid-item grid-header">Local</div>
+        <div class="grid-item grid-header">Cidade</div>
+        <div class="grid-item grid-header">Data</div>
+        
+        <div class="grid-item">Estádio do Maracanã</div>
+        <div class="grid-item">Rio de Janeiro</div>
+        <div class="grid-item">15/03/2025</div>
+        
+        <div class="grid-item">Estádio do Morumbi</div>
+        <div class="grid-item">São Paulo</div>
+        <div class="grid-item">20/04/2025</div>
+        
+        <div class="grid-item">Mineirão</div>
+        <div class="grid-item">Belo Horizonte</div>
+        <div class="grid-item">10/06/2025</div>
+        
+        <div class="grid-item">Beira-Rio</div>
+        <div class="grid-item">Porto Alegre</div>
+        <div class="grid-item">25/07/2025</div>
+    </div>
+</body>
+</html>
